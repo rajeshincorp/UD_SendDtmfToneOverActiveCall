@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SendDtmfToneOverActiveCall</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hello_page">HelloPage</string>
+    <string name="title_activity_dtmfplayer">DTMFPlayer</string>
+
+</resources>

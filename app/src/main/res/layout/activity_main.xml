@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+    <EditText
+        android:id="@+id/id_phoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        android:padding="10sp"
+        android:hint="Enter a phone number here.."
+        android:textColor="#424242"
+        android:gravity="bottom"
+        android:textSize="25sp"
+        android:numeric="integer"
+        android:background="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/id_callButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/call_button"
+        android:text="CALL"
+        android:textSize="16sp"
+        android:textColor="#424242"/>
+
+     </LinearLayout>
+
+</LinearLayout>
