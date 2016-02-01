@@ -4,10 +4,10 @@ Send DTMF Tone(s) Over An Active Call In Android
 
 First of all thank you for showing interest on the project. This README.md contains
 
->>Introduction
->>Workflow Of The App
->>Status Report Of The Project
-
+<b>Introduction</b>
+<b>Workflow Of The App</b>
+<b>Status Report Of The Project</b>
+<br><br>
 
 
 INTRODUCTION :
