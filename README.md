@@ -19,7 +19,7 @@ in the background. That's it.
 
 Status report of this project : 
 
-Till now i have found five APIs that seems to helpfull. 
+Till now i have found five APIs that seems helpfull. 
 
 1. android.telecom.Call (Public API)    
 2. android.telecom.Phone (Hidden API)  or  ContactsContract.CommonDataKinds.Phone (Public API)
@@ -27,6 +27,7 @@ Till now i have found five APIs that seems to helpfull.
 4. android.telecom.InCallAdapter (Hidden API)
 5. com.android.internal.telecom.IInCallAdapter (Internal API)
 
+>>
 android.telecom.Call | link: http://developer.android.com/reference/android/telecom/Call.html
 
 constructor: 
@@ -36,8 +37,27 @@ constructor:
         mTelecomCallId = telecomCallId;
         mInCallAdapter = inCallAdapter;
         mState = STATE_NEW;
-  }
+ }
 
 usefull method: playDtmfTone(char digit) | link: http://developer.android.com/reference/android/telecom/Call.html#playDtmfTone(char)
 
+>>
 android.telecom.Phone 
+
+constructor:
+
+ Phone(InCallAdapter inCallAdapter) {
+        this.mInCallAdapter = inCallAdapter;
+ }
+ 
+>>
+android.telecom.InCallAdapter 
+link: https://android.googlesource.com/platform/frameworks/base/+/master/telecomm/java/android/telecom/InCallAdapter.java
+
+constructor:
+  
+  public InCallAdapter(IInCallAdapter adapter) {
+        mAdapter = adapter;
+    }
+
+IInCallAdapter is an interface that extends IInterface 
