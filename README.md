@@ -16,7 +16,7 @@
 
 
 <h3><u>WORKFLOW OF THE APP :</u></h3>
-<p>When you will launch the app you will be landed to a page where you can enter a phone number and can press call button to make a call. Pressing call button will launch default InCall app[or Telephone app] that will make the call for you. Immediately the InCall app will go into the background and our custom dialer will appear on the screen. Now you will be able to use this custom dialer to send DTMF tone over the active call in the background. That's it.</p>
+<p>When you will launch the app you will be landed to a page where you can enter a phone number and can press call button to make a phone call. Pressing call button will launch default InCall app[or Telephone app] that will make the call for you. Immediately the InCall app will go into the background and our custom dialer will appear on the screen. Now you will be able to use this custom dialer to send DTMF tone over the active call in the background. That's it.</p>
 <br>
 So, we can divide the project into two parts<br>
 1) Sending the call into the background                ---- Achieved.<br>
