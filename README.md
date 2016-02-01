@@ -7,24 +7,24 @@
 <b>Introduction</b><br>
 <b>Workflow Of The App</b><br>
 <b>Status Report Of The Project</b><br>
-<br><br><br>
+<br><br>
 
 
-<h3>INTRODUCTION :</h3>
+<h3><u>INTRODUCTION :</u></h3>
 <p>The purpose of this project is to build API(s) that we can integrate to our android app that enables us to send DTMF tone(s) over an active call. I am trying to achieve this in a simple android app.</p>
 <br><br><br>
 
 
-<h3>WORKFLOW OF THE APP :</h3>
+<h3><u>WORKFLOW OF THE APP :</u></h3>
 <p>When you launch the app you will be landed to a page where you can enter a phone number and can press call button to make a call. Pressing call button will launch default InCall app[or Telephone app] that will make the call for you. Immediately the InCall app will go into the background and our custom dialer will appear on the screen. Now you will be able to use this custom dialer to send DTMF tone over the active call in the background. That's it.</p>
 <br>
 So, we can divide the project into two parts<br>
 1) Sending the call into the background                ---- Achieved.<br>
 2) Sending the DTMF tone over an active call           ---- Not Achieved Yet.<br>
-<br><br><br>
+<br><br>
 
 
-<h3>STATUS REPORT OF THE PROJECT :</h3> 
+<h3><u>STATUS REPORT OF THE PROJECT :</u></h3> 
 
 Till now i have found five APIs that seems helpfull. 
 <br>
@@ -60,7 +60,7 @@ android.telecom.Phone<br>
 <Br>
 Phone(InCallAdapter inCallAdapter) {<br>
         this.mInCallAdapter = inCallAdapter;<Br>
-}<br>
+}
 <br><br><br>
 
  
@@ -72,7 +72,7 @@ android.telecom.InCallAdapter<br>
   <br>
 public InCallAdapter(IInCallAdapter adapter) {<br>
         mAdapter = adapter;<br>
-}<br>
+}
 <br><br><br>
 
 
