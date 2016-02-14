@@ -99,3 +99,5 @@ android.telecom.InCallService<br>
 <p>I searched for <b>com.android.services.telephony.TelephonyConnectionService</b> and I found it inside <b>TeleService.apk</b>. After analysing the code I found that it just acts as an intermidiate agent and call another interface <b>com.android.internal.telecom.IConnectionService</b>. I have also checked <b>Telecom.apk</b> and it is also an intermidiate. You can get these apk files by pulling out System directory from your android device using adb shell commands, these apk reside under System/priv-app/.</p>
 <br><br>
 <p>Please also check this conversation on Stack Overflow</p> [http://stackoverflow.com/questions/35073211/getting-java-lang-classcastexception-while-sending-dtmf-tones-over-an-active-cal]
+
+Note : You get errors after importing this project in android studio. Just rename "BackgroungCallingApp.iml" to "SendDtmfToneOverActiveCall.iml".
