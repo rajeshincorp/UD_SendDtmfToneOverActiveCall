@@ -100,4 +100,4 @@ android.telecom.InCallService<br>
 <br><br>
 <p>Please also check this conversation on Stack Overflow</p> [http://stackoverflow.com/questions/35073211/getting-java-lang-classcastexception-while-sending-dtmf-tones-over-an-active-cal]
 
-Note : You get errors after importing this project in android studio. Just rename "BackgroungCallingApp.iml" to "SendDtmfToneOverActiveCall.iml".
+Note : You will get errors after importing this project in android studio. Just rename "BackgroungCallingApp.iml" to "SendDtmfToneOverActiveCall.iml".
