@@ -67,7 +67,7 @@ Phone(InCallAdapter inCallAdapter) {<br>
 android.telecom.InCallAdapter<br> 
 [type][Hidden API]<br>
 [doc][unavailable]<br>
-[download][http://friper.in/APIs/InCallAdapter]<br>
+[download][http://friper.in/APIs/InCallAdapter.java]<br>
 [constructor]<br>
   <br>
 public InCallAdapter(IInCallAdapter adapter) {<br>
@@ -85,10 +85,10 @@ com.android.internal.telecom.IInCallAdapter<br>
 android.telecom.InCallService<br>
 [type][Public API]<br>
 [doc][http://developer.android.com/reference/android/telecom/InCallService.html]<br>
-[download][http://friper.in/InCallService]<br>
+[download][http://friper.in/APIs/InCallService.java]<br>
 <br>
 <br>
-<p>After tracking control flow of 'playDtmfTone(char digit)', I have reached to a conclusion that interface IInCallAdapter is playing a key role here and acting as a bridge between these APIs and InCall App. So i guess we can use this 'IInCallAdapter' interface to communicate with InCall App and can triger DTMF tones over an active call. But i don't know the package name used by InCall App. Hence unable to use this IInCallAdapter interface. IInCallAdapter extends IInterface[http://friper.in/APIs/IInterface.java] which returns an instance of IBinder, means interprocess communication is going here using a Binder.</p>
+<p>After tracking control flow of 'playDtmfTone(char digit)', I have reached to a conclusion that interface IInCallAdapter is playing a key role here and acting as a bridge between these APIs and InCall App. So i guess we can use this 'IInCallAdapter' interface to communicate with InCall App and can triger DTMF tones over an active call. IInCallAdapter extends IInterface[http://friper.in/APIs/IInterface.java] which returns an instance of IBinder, means interprocess communication is going here using a Binder. There is another InCallAdapter inside Telecom.apk(I guess this is the same apk used by android to make phone calls) that extend this IInCallAdapter. InCallAdapter inside Telecom.apk using stub to extend this IInCallAdapter. You can download this decompiled Telecom.apk from "http://friper.in/APIs/Telecom.rar"</p>
 <br>
 <br>
 <p>This is a snippet of the Android Studio Logcat when we make a phone call and dial DTMF tones using InCall app.</p>
