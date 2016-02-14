@@ -96,6 +96,6 @@ android.telecom.InCallService<br>
 01-31 14:47:00.466     539-1014/? p/Telecom﹕ Call: Send playDtmfTone to connection service for call [256700921, ACTIVE, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:**********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]<br>
 01-31 14:47:00.466     539-1014/? I/Telecom﹕ Event: Call 2: START_DTMF, [c1dfd96eea8cc2b62785275bca38ac261256e278]
 <br><br>
-<p>I searched a lot but didn't find com.android.phone & com.android.services.telephony.TelephonyConnectionService in my android device's system directory. Still searching..</p> 
+<p>I searched for <b>com.android.services.telephony.TelephonyConnectionService</b> and I found it inside <b>TeleService.apk</b>. After analysing the code I found that it just acts as an intermidiate agent and call another interface <b>com.android.internal.telecom.IConnectionService</b>. I have also checked <b>Telecom.apk</b> and it is also an intermidiate. You can get these apk files by pulling out System directory form your android device using adb shell commands, these apk reside under System/priv-app/.</p>
 <br><br>
 <p>Please also check this conversation on Stack Overflow</p> [http://stackoverflow.com/questions/35073211/getting-java-lang-classcastexception-while-sending-dtmf-tones-over-an-active-cal]
